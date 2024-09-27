@@ -29,14 +29,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+        
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
           aws-access-key-id: ${{ secrets.AWSACCESSKEY }}
           aws-secret-access-key: ${{ secrets.AWSSECRETACCESSKEY }}
-          aws-region: eu-west-1
-      - name: Run AWS CLI Command
+          aws-region: eu-west-1  # Specify your region, update if needed
+          
+      - name: Run AWS CLI Command 2
         run: |
           aws s3 mb s3://williamcaamotbucket
           aws s3 ls
