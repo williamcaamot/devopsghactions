@@ -5,3 +5,5 @@ One workflow is for s3 buckets, one of the jobs in this workflow creates a new b
 ## Remember
 - [ ] If Glenn resets the AWS environment it's necessary to create a new access token for GH actions to access the AWS environment.
 - [ ] This is done underneath IAM -> users -> william-ca -> Security credentials -> Access keys
+wd
+awdawdwad
